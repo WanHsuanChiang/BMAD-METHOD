@@ -1,0 +1,22 @@
+# Expansion Pack Configuration for the Operational Knowledge Pack
+
+# The unique identifier for the expansion pack.
+# This should match the directory name.
+id: bmad-operational-knowledge-pack
+
+# The display name of the expansion pack.
+name: BMAD Operational Knowledge Pack
+
+# A short, descriptive title for the pack.
+short-title: Operational Knowledge
+
+# The version of the expansion pack, following semantic versioning.
+version: 0.1.0
+
+# A brief description of what the expansion pack does.
+description: >
+  An expansion pack with agents and tools for building and managing
+  persistent memory networks and operational knowledge bases.
+
+# The author or maintainer of the expansion pack.
+author: "You"
