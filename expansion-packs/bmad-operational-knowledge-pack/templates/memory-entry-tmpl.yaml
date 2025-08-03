@@ -1,0 +1,52 @@
+template:
+  id: memory-entry-tmpl
+  name: Standard Memory Entry
+  version: 1.0.0
+  description: A template for creating a single, atomic memory entry for the knowledge network.
+  output: "{{id}}.md"
+
+workflow:
+  mode: interactive
+
+sections:
+  - id: frontmatter
+    type: frontmatter
+    content: |
+      ---
+      id: {{id}}
+      type: {{type}}
+      title: "{{title}}"
+      created: {{timestamp}}
+      tags: [{{tags}}]
+      ---
+
+  - id: title_header
+    type: content
+    content: |
+      # {{title}}
+
+  - id: one_liner
+    type: content
+    content: |
+      ## One-liner
+      > {{one_liner}}
+
+  - id: context_links
+    type: content
+    content: |
+      ## Context Links
+      - Based on: {{based_on}}
+      - Leads to: {{leads_to}}
+      - Related to: {{related_to}}
+
+  - id: core_content
+    type: content
+    content: |
+      ## Core Content
+      {{core_content}}
+
+  - id: key_files
+    type: content
+    content: |
+      ## Key Files
+      {{key_files}}
